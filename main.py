@@ -15,7 +15,7 @@ async def main(page:Page):
             )
         page.update()
     page.add(Image("shiekh.png"))
-    for file in os.listdir("src/assets"):
+    for file in os.listdir("assets"):
         if ".mp3" not in file:
             continue
         page.add(TextButton(
